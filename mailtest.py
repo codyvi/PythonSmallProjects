@@ -5,7 +5,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 gmailaddress = "noreplyqrcodes@gmail.com"
-gmailpassword = ""
+gmailpassword = "8Y&(d2bu"
 mailto = input("what email address do you want to send your message to? \n ")
 msg = MIMEMultipart()
 msg['From'] = gmailaddress
