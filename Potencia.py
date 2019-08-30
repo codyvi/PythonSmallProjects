@@ -9,9 +9,8 @@ def SetPot(SetP):
     return r + [s + [SetP[-1]] for s in r]
 
 #Función para ordenar los valores de la función potencia del vació al mayor.
-    
 def Ordenar(SetP):
     for e in sorted(SetP, key=lambda s: (len(s), s)):
         print(e)
 
-Ordenar(SetPot([4,5,11]))
+Ordenar(SetPot([1,2,3,4,5,6,7,8,9]))
