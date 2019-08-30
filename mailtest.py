@@ -4,9 +4,11 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
+import qrtest
+
 gmailaddress = "noreplyqrcodes@gmail.com"
 gmailpassword = "8Y&(d2bu"
-mailto = input("what email address do you want to send your message to? \n ")
+mailto = input("Cuál es tu correo? \n ")
 msg = MIMEMultipart()
 msg['From'] = gmailaddress
 msg['To'] = mailto
@@ -14,10 +16,10 @@ msg['Subject'] = "QR Code"
 msg_content = MIMEText('Buen dia, adjuntamos su código qr.', 'plain', 'utf-8')
 msg.attach(msg_content)
 # set attachment mime and file name, the image type is png
-with open('C:/Users/David Cantú/OneDrive/Documents/Proyectos/PythonSmallProjects/obama.jpg', 'rb') as f:
-    mime = MIMEBase('image', 'jpg', filename='obama.jpg')
+with open('C:/Users/David Cantú/OneDrive/Documents/Proyectos/PythonSmallProjects/myQR.jpg', 'rb') as f:
+    mime = MIMEBase('image', 'jpg', filename='myQR.jpg')
     # add required header data:
-    mime.add_header('Content-Disposition', 'attachment', filename='obama.jpg')
+    mime.add_header('Content-Disposition', 'attachment', filename='myQR.jpg')
     mime.add_header('X-Attachment-Id', '0')
     mime.add_header('Content-ID', '<0>')
     # read attachment file content into the MIMEBase object
