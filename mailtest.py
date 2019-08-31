@@ -7,7 +7,7 @@ from email import encoders
 import qrtest
 
 gmailaddress = "noreplyqrcodes@gmail.com"
-gmailpassword = "8Y&(d2bu"
+gmailpassword = ""
 mailto = input("Cuál es tu correo? \n ")
 msg = MIMEMultipart()
 msg['From'] = gmailaddress
