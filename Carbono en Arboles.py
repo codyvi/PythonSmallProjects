@@ -1,6 +1,6 @@
 import math
 
-DensidadArbol = float(input('Dame la densidad del arbol en metros: '))
+DensidadArbol = float(input('Dame la densidad del arbol en kilogramos: '))
 AlturaArbol = float(input('Dame la altura del arbol en metros: '))
 DiametroArbol = float(input('Dame el diametro del arbol en metros: '))
 
