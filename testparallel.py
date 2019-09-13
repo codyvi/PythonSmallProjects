@@ -19,8 +19,7 @@ Students = (
 
 pprint(Students)
 print()
-#single processing in cpu one core
-# we can proccess many in parallel it is faster
+
 def transform(x):
     print(f'Processing {os.getpid()} on {x.name}')
     time.sleep(1)
@@ -28,10 +27,8 @@ def transform(x):
     print(f'Done processing {os.getpid()} on {x.name}')
     return result
 
-#this calculates how much time did it took to run the function
 start =time.time()
 
-#multi processing processes = number of processes
 pool = multiprocessing.Pool()
 result = pool.map(transform, Students)
 end = time.time()
