@@ -9,6 +9,9 @@ newWord = Convert(word)
 
 size = len(newWord)-1
 
-# if newWord[size] 
+s = newWord[size]
 
-print(newWord[8])
+s = s.translate({ord(i): None for i in '"}'})
+
+
+print(s)
