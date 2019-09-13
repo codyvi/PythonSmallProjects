@@ -7,7 +7,7 @@ DiametroArbol = float(input('Dame el diametro del arbol en metros: '))
 
 g = math.pi/4 * math.pow(DiametroArbol, 2)
 
-V = g * AlturaArbol * .6
+V = g * AlturaArbol * .7
 
 B = V * DensidadArbol * 1.35
 
