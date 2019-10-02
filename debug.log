@@ -1,2 +1,0 @@
-[1002/084801.345:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
-[1002/084801.366:ERROR:exception_snapshot_win.cc(98)] thread ID 16780 not found in process
