@@ -3,6 +3,7 @@ def Convert(string):
     return li 
 
 word = '{"main": "Nombre: David Alonso Cantu Martinez  Matricula: A00822455"}'
+wor2 = '{"id": 1, "name: car1, color: green"}'
 
 
 newWord = Convert(word)
