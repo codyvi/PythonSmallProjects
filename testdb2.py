@@ -1,5 +1,9 @@
 from tinydb import TinyDB, Query
+import json
 
+def Convert(string): 
+    li = list(string.split(" ")) 
+    return li 
 
 
 db = TinyDB('db.json')
@@ -7,3 +11,14 @@ Cars = Query()
 yeet = db.search(Cars.color == 'green')
 
 print(yeet)
+
+str1 = ''.join(str(e) for e in yeet)
+print(str1)
+
+newli = Convert(str1)
+
+s = newli[len(newli) - 1]
+
+s = s.translate({ord(i): None for i in '"}'})
+
+print(s)
