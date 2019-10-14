@@ -5,7 +5,7 @@ def Convert(string):
     return li 
 
 
-db = TinyDB('db.json')
+db = TinyDB('./tmp/db.json')
 Name = Query()
 yeet = db.search(Name.name == 'david')
 
