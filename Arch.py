@@ -8,4 +8,3 @@ for i in range(m):
      f.write("Registro %d\r\n" % (i+1))
 
 f.close() 
-
