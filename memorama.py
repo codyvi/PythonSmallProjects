@@ -55,7 +55,7 @@ def primerPar():
       print("Esa carta ya esta volteada, prueba otra vez")
   par.append(fila)
   par.append(columna)
-  imprimirTablero()
+  # imprimirTablero()
   print("Tu primera carta es " + str(tablero[fila][columna]))
   return par
 
@@ -85,18 +85,20 @@ def segundoPar(primer):
         print("Esa carta ya esta volteada, prueba otra vez")
   par.append(fila)
   par.append(columna)
-  imprimirTablero()
+  # imprimirTablero()
   print("Tu segunda carta es " + str(tablero[fila][columna]))
   return par
 
 def checarPar(par1, par2, jugador): 
   if (tablero[par1[0]][par1[1]] == tablero[par2[0]][par2[1]]):
+    imprimirTablero()
     print("Encontraste el par de " + str(tablero[par1[0]][par1[1]]))
     if (jugador == 1):
       pares[0] += 1
     else:
       pares[1] += 1
-  else: 
+  else:
+    imprimirTablero() 
     print("No encontraste ningun par, se voltaran las cartas de nuevo")
     tablero[par1[0]][par1[1]] = "-"
     tablero[par2[0]][par2[1]] = "-"
