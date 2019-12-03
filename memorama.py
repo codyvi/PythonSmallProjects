@@ -55,7 +55,6 @@ def primerPar():
       print("Esa carta ya esta volteada, prueba otra vez")
   par.append(fila)
   par.append(columna)
-  # imprimirTablero()
   print("Tu primera carta es " + str(tablero[fila][columna]))
   return par
 
@@ -85,7 +84,6 @@ def segundoPar(primer):
         print("Esa carta ya esta volteada, prueba otra vez")
   par.append(fila)
   par.append(columna)
-  # imprimirTablero()
   print("Tu segunda carta es " + str(tablero[fila][columna]))
   return par
 
@@ -147,5 +145,12 @@ def main():
       respuesta = respuesta.lower()
       if(respuesta == "n"):
         seDeseaJugar = False
+        print("Juego terminado sin acabar")
+        if(pares[0] > pares[1]):
+          print("El ganador ha sido el jugador 1 con " + str(pares[0]) + " pares")
+        elif (pares[0] == pares[1]):
+          print ("Ambos jugadores han quedado empatados con " + str(pares[0]) + " pares")
+        else: 
+          print("El ganador ha sido el jugador 2 con " + str(pares[1]) + " pares")
 
 main()
