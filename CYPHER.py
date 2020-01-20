@@ -6,4 +6,4 @@ n = int(input('Dame n: '))
 
 cipher = ((m**e) % n)
 
-print(cipher)
+print('El resultado es: ', cipher)
