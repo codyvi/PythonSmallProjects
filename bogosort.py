@@ -22,18 +22,18 @@ print ("Sorted:",s)
 print ("Number of iterations: %d"%ct)
 
 #Printing how much it would take to sort arrays from greater size
-#times ={}
-#cutoff = 20
-#from time import time 
-#for i in range(2,100):
-#    a=create_array(i,i)
-#    t0=time()
-#    ct,s=bogo_sort(a)
-#    dur=time()-t0
-#    times[i]=dur
-#    if dur >=cutoff: break
+times ={}
+cutoff = 20
+from time import time 
+for i in range(2,100):
+    a=create_array(i,i)
+    t0=time()
+    ct,s=bogo_sort(a)
+    dur=time()-t0
+    times[i]=dur
+    if dur >=cutoff: break
 
-#print ("\tBogosort Duration (s)")
-#print (30*"_")
-#for n,dur in times.items():
-#    print("%d\t%0.5f"%(n,dur))
+print ("\tBogosort Duration (s)")
+print (30*"_")
+for n,dur in times.items():
+    print("%d\t%0.5f"%(n,dur))
